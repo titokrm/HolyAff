@@ -75,6 +75,7 @@ document.addEventListener( 'DOMContentLoaded', function() {
       overlay.style = 'position: fixed; left: 0; right: 0; top: 0; bottom: 0; z-index: 10000; background: url("assets/images/loading.gif") no-repeat center; background-size: 50px 50px; background-color: rgba(0, 0, 0, 0.7);';
       overlay.classList = 'js-overlay';
       document.querySelector('body').append(overlay);
+      textarea.value = '';
       setTimeout(() => {
         document.querySelector('.js-overlay').remove();
         comment.scrollIntoView({
